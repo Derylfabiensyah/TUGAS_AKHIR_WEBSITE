@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Porsche 911 Carrera GTS 992",
+    "img": "/card/1.jpg",
+    "group": 1
+  },
+  {
+    "name": "Mercedes Benz GTS AMG",
+    "img": "/card/2.jpg",
+    "group": 1
+  },
+  {
+    "name": "BMW M4 Competition S58 G82 iDrive 2023",
+    "img": "/card/3.jpg",
+    "group": 1
+  },
+  {
+    "name": "Koenigsegg Gemera 2023",
+    "img": "/card/4.jpg",
+    "group": 1
+  },
+  {
+    "name": "Rolls Royce Phantom 6.7L CBU 2023",
+    "img": "/card/5.jpg",
+    "group": 1
+  },
+  {
+    "name": "McLaren MP4-12C Spider 3.8",
+    "img": "/card/6.jpg",
+    "group": 2
+  },
+  {
+    "name": "Audi RS5 Coupe TFSI Quattro 2018",
+    "img": "/card/7.jpg",
+    "group": 2
+  },
+  {
+    "name": "Aston Martin DB-11 V12 Coupe 2017",
+    "img": "/card/8.jpg",
+    "group": 2
+  },
+  {
+    "name": "Bentley Flying Spur 3.0 Hybrid KAHN Edition CBU 2024",
+    "img": "/card/9.jpg",
+    "group": 2
+  },
+  {
+    "name": "Maserati MC stradale 2013",
+    "img": "/card/10.jpg",
+    "group": 2
+  },
+  {
+    "name": "Nissan GT-R r35 nismo",
+    "img": "/card/11.jpg",
+    "group": 3
+  },
+  {
+    "name": "ferrari 488 spyder 2019",
+    "img": "/card/12.jpg",
+    "group": 3
+  },
+  {
+    "name": "bmw i8 roadster phev Hybrid",
+    "img": "/card/13.jpg",
+    "group": 3
+  },
+  {
+    "name": "jeep wrangler rubicon jk 4 door sahara Edition",
+    "img": "/card/14.jpg",
+    "group": 3
+  },
+  {
+    "name": "volkswagen scirocco 1.4 tsi",
+    "img": "/card/15.jpg",
+    "group": 3
+  },
+  {
+    "name": "ford mustang high peformance 2021",
+    "img": "/card/16.jpg",
+    "group": 4
+  },
+  {
+    "name": "mini chooper jcw gp3 Edition hatchback 2.0l (gp0336) 2020",
+    "img": "/card/17.jpg",
+    "group": 4
+  },
+  {
+    "name": "toyota supra mk5 3.0 gr 2020",
+    "img": "/card/18.jpg",
+    "group": 4
+  },
+  {
+    "name": "lamborghini aventador 2012",
+    "img": "/card/19.jpg",
+    "group": 4
+  },
+  {
+    "name": "nissan z fairlady (rz34) 2022",
+    "img": "/card/20.jpg",
+    "group": 4
+  }
+]

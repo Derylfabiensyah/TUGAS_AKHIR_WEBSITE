@@ -26,3 +26,48 @@ fetch('brand.json')
   .catch(error => {
     console.error('Error loading brand data:', error);
   });
+
+fetch('car.json')
+  .then(response => response.json())
+  .then(data => {
+    const viewCarContainer = document.querySelector('.viewcar');
+
+    const filteredCars = data.filter(car => car.group == 1 || car.group == 2);
+
+    const groupedCars = {
+      1: [],
+      2: []
+    };
+
+    filteredCars.forEach(car => {
+      groupedCars[car.group].push(car);
+    });
+
+    [1, 2].forEach(group => {
+      const cardGroup = document.createElement('div');
+      cardGroup.classList.add('card1');
+
+      groupedCars[group].forEach(car => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        const img = document.createElement('img');
+        img.classList.add('imagecar');
+        img.src = car.img;
+        img.alt = car.name;
+
+        const title = document.createElement('h2');
+        title.textContent = car.name;
+
+        card.appendChild(img);
+        card.appendChild(title);
+        cardGroup.appendChild(card);
+      });
+
+      viewCarContainer.appendChild(cardGroup);
+    });
+  })
+  .catch(error => {
+    console.error('Error loading car data:', error);
+  });
+
