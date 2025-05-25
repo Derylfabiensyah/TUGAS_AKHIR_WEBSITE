@@ -1,0 +1,257 @@
+html,*,body{
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f5efeb;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: #343434;
+}
+
+.sec1 { 
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+  margin-top: 5px;
+  margin-right: 150px;
+}
+
+.sec1 h1{
+  font-size: 30px;
+  color: #343434;
+}
+
+.home {
+  margin-right: 15px;
+}
+
+.car {
+  margin-right: 15px;
+}
+
+.workshop {
+  margin-right: 15px;
+}
+
+.sec2{
+  margin-top: 5px;
+  margin-left: 150px;
+}
+
+.sec2 h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #343434;
+}
+
+.detail_car {
+  background-color: #2f4156;
+  width: 1100px;
+  height: 610px;
+  margin-left: 200px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.detail_car h1 {
+  background-color: #f5efeb;
+  padding: 5px 5px 5px 30px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.content {
+  display: flex;
+  background-color: transparent;
+}
+
+.content img {
+  width: 500px;
+  height: 500px;
+}
+
+.detail_car p {
+  background-color: #2f4156;
+  color: #f5efeb;
+  margin-left: 20px;
+  column-count: 2;           /* Bagi jadi 2 kolom */
+  column-gap: 40px;          /* Jarak antar kolom */
+  text-align: left;
+}
+
+.carousel {
+  position: relative;
+  width: 800px;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  display: none;
+  width: 500px;
+  height: 500px;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.map {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 200px;
+  background-color: #2f4156;
+  color: rgb(52, 52, 52);
+  width: 850px;
+  height: 500px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.maptext{
+  margin-right: 50px;
+  padding-top: 25px;
+  background-color: #2f4156;
+  margin-top: -50px;
+}
+
+.iconbrand{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  background-color: #567C8D;
+}
+
+.maptext div{
+  display: flex;
+  background-color: #2f4156;
+}
+
+.maptext h2 {
+  background-color: #2f4156;
+  color: #f5efeb;
+}
+
+.maptext h1 {
+  background-color: #2f4156;
+  margin-left: 66px;
+  margin-bottom: 50px;
+  color: #f5efeb;
+}
+
+.maptext img{
+  background-color: #2f4156;
+}
+
+iframe{
+  width: 30em;
+  height: 28em;
+  border-radius: 20px;
+}
+
+.info {
+  margin-top: 90px;
+  background-color: #2f4156;
+  height: auto;
+  padding-left: 200px;
+  padding-top: 30px;
+  color: rgb(52, 52, 52);
+  display: flex ;
+}
+
+.info h3{
+  background-color: #2f4156;
+  font-size: 24px;
+}
+
+
+.opening h3 {
+  padding-bottom: 30px;
+  font-size: 25px;
+  color: #f5efeb;
+}
+
+.opening h2 {
+  background-color: #2f4156;
+  color: #f5efeb;
+  font-size: 30px;
+} 
+
+.contact h3 {
+  padding-bottom: 30px;
+  font-size: 25px;
+  color: #f5efeb;
+}
+
+.contact h2{
+  background-color: #2f4156;
+  color: #f5efeb;
+  font-size: 30px;
+}
+
+.hotline h3{
+  color: #f5efeb;
+}
+
+.sosialmedia {
+  background-color: #2f4156;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+.sosialmedia h3{
+  font-size: 30px;
+  color: #f5efeb;
+}
+
+.iconfooter {
+  background-color: #2f4156;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -55px;
+  margin-top: 20px;
+}
+
+.image {
+  background-color: #f5efeb;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.image svg{
+  width: 50px;
+  height: 50px;
+  background-color: #f5efeb;
+  fill: #2f4156;
+}
+
+footer{
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@keyframes autorun{
+  to {
+    left: -200%;
+  }
+}
