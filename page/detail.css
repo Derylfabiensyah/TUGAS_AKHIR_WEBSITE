@@ -56,10 +56,11 @@ nav h1 a {
 
 .detail_car {
   background-color: #2f4156;
-  width: 1100px;
-  height: 610px;
+  width: 1090px;
+  height: 640px;
   margin-left: 200px;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   border-radius: 20px;
 }
@@ -76,17 +77,25 @@ nav h1 a {
   background-color: transparent;
 }
 
-.content img {
-  width: 500px;
-  height: 500px;
+.text-content {
+  background-color: transparent;
+  display: block;
+  text-align: center;
+  margin-top: -7px;
+}
+
+.text-content h2 {
+  background-color: transparent;
+  color: #f5efeb;
+  margin-bottom: 10px;
 }
 
 .detail_car p {
   background-color: #2f4156;
   color: #f5efeb;
   margin-left: 20px;
-  column-count: 2;           /* Bagi jadi 2 kolom */
-  column-gap: 40px;          /* Jarak antar kolom */
+  column-count: 2; 
+  column-gap: 50px;
   text-align: left;
 }
 
@@ -109,6 +118,97 @@ nav h1 a {
 
 .carousel img.active {
   display: block;
+}
+
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  box-sizing: border-box;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.carousel-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: auto;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev { left: 0; }
+button.next { right: 0; }
+
+.viewcar {
+  display: flex;
+  flex-direction: column;
+  margin-left: 79px;
+  margin-right: 78px;
+}
+
+.viewcar a {
+  text-decoration: none;
+}
+
+.imagecar {
+  width: 254.8px;
+  height: 254.8px;
+}
+
+.card {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  margin-left: 3px;
+  color: #343434;
+}
+
+.card1 {
+  display: flex;
+}
+
+.viewAll {
+  margin-left: 700px;
+  margin-top: 50px;
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.viewAllLink {
+  text-decoration: none;
+  color: #2f4156;
 }
 
 .map {

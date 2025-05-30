@@ -51,6 +51,9 @@ fetch('car.json')
         const card = document.createElement('div');
         card.classList.add('card');
 
+        const link = document.createElement('a');
+        link.href = `detail.html?id=${car.id}`;
+
         const img = document.createElement('img');
         img.classList.add('imagecar');
         img.src = car.img;
@@ -59,8 +62,9 @@ fetch('car.json')
         const title = document.createElement('h2');
         title.textContent = car.name;
 
-        card.appendChild(img);
-        card.appendChild(title);
+        link.appendChild(img);
+        link.appendChild(title);
+        card.appendChild(link);
         cardGroup.appendChild(card);
       });
 
@@ -70,4 +74,6 @@ fetch('car.json')
   .catch(error => {
     console.error('Error loading car data:', error);
   });
+
+
 

@@ -119,6 +119,10 @@ nav h1 a {
   margin-right: 78px;
 }
 
+.viewcar a {
+  text-decoration: none;
+}
+
 .imagecar {
   width: 254.8px;
   height: 254.8px;

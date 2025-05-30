@@ -32,22 +32,29 @@ fetch('car.json')
   .then(data => {
     const viewCarContainer = document.querySelector('.viewcar');
 
-    const groupedCars = {};
+    const filteredCars = data.filter(car => car.group == 1 || car.group == 2 || car.group == 3 || car.group == 4);
 
-    data.forEach(car => {
-      if (!groupedCars[car.group]) {
-        groupedCars[car.group] = [];
-      }
+    const groupedCars = {
+      1: [],
+      2: [],
+      3: [],
+      4: []
+    };
+
+    filteredCars.forEach(car => {
       groupedCars[car.group].push(car);
     });
 
-    Object.keys(groupedCars).sort((a, b) => a - b).forEach(group => {
+    [1, 2, 3, 4].forEach(group => {
       const cardGroup = document.createElement('div');
       cardGroup.classList.add('card1');
 
       groupedCars[group].forEach(car => {
         const card = document.createElement('div');
         card.classList.add('card');
+
+        const link = document.createElement('a');
+        link.href = `detail.html?id=${car.id}`;
 
         const img = document.createElement('img');
         img.classList.add('imagecar');
@@ -57,8 +64,9 @@ fetch('car.json')
         const title = document.createElement('h2');
         title.textContent = car.name;
 
-        card.appendChild(img);
-        card.appendChild(title);
+        link.appendChild(img);
+        link.appendChild(title);
+        card.appendChild(link);
         cardGroup.appendChild(card);
       });
 
