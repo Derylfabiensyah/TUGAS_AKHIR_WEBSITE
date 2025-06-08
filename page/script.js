@@ -75,5 +75,3 @@ fetch('car.json')
     console.error('Error loading car data:', error);
   });
 
-
-

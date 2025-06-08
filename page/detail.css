@@ -355,3 +355,63 @@ footer{
     left: -200%;
   }
 }
+
+/* Untuk layar dengan lebar maksimum 768px (tablet dan ponsel) */
+@media (max-width: 768px) {
+  .sec1, .sec2 {
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail_car {
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-content {
+    margin-top: 20px;
+  }
+
+  .viewcar, .card1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .map {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .sosialmedia {
+    margin: 30px auto 0;
+  }
+}
